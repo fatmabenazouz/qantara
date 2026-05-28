@@ -1,15 +1,3 @@
 {
-    "experimentalServices": {
-      "frontend": {
-        "root": "frontend",
-        "routePrefix": "/",
-        "framework": "vite"
-      },
-      "backend": {
-        "root": "backend",
-        "routePrefix": "/_/backend",
-        "builder": "@vercel/node",
-        "entrypoint": "index.js"
-      }
-    }
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
   }
